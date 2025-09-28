@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score, classification_report, recall_score
 # for model serialization
 import joblib
 import mlflow
-
+from huggingface_hub import HfApi  
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("mlops-training-experiment")
 
